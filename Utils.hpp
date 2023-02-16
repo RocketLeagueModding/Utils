@@ -48,13 +48,13 @@ namespace Utils
         return ProductInstanceIDToHexString(GeneratePIID(Product));
     }
 
-     std::string GetQualityName(uint8_t Quality)
-     {
+    std::string GetQualityName(uint8_t Quality)
+    {
 	return (Quality == ((uint8_t)EProductQuality::EPQ_Uncommon) ? "Uncommon" : (Quality == (uint8_t)EProductQuality::EPQ_Rare) ? "Rare" : (Quality == (uint8_t)EProductQuality::EPQ_VeryRare) ? "VeryRare" : (Quality == (uint8_t)EProductQuality::EPQ_Import) ? "Import" : (Quality == (uint8_t)EProductQuality::EPQ_Exotic) ? "Exotic" : (Quality == (uint8_t)EProductQuality::EPQ_BlackMarket) ? "BlackMarket" : "");
-     }
+    }
 
-     std::string GetTradeHoldName(uint8_t TradeHold)
-     {
+    std::string GetTradeHoldName(uint8_t TradeHold)
+    {
 	return (TradeHold == ((uint8_t)CONST_TRADEHOLD_NONE) ? "None" : (TradeHold == (uint8_t)CONST_TRADEHOLD_ALL) ? "Rare" : (TradeHold == (uint8_t)CONST_TRADEHOLD_P2P) ? "P2P" : "");
-     }
+    }
 }
